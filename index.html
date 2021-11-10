@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            
+        }
+      
+        .container {
+            width: 30%;
+            height: 500px;
+            margin-top: 80px;
+           padding:10px 10px;
+            margin-left: 35%;
+         }
+        input{
+          width: 400px;
+          height: 30px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          }
+        button{
+          width: 50px;
+          height: 20px;
+          }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <fieldset>
+            <legend>Registration Form</legend>
+        <form onsubmit="return validate()" action="">
+            
+                
+                name<input type="text"  id="name"  placeholder="enter your name">
+                <span id="msg"></span>
+                <br>
+
+                age<input type="text"  id="age"  placeholder="enter your age">
+                <span id="agemsg"></span><br>
+
+                Email id<input type="text"  id="email"  placeholder="enter your mailid">
+                <span id="mailmsg"></span><br>
+<!-- 
+                Mobile number<input type="tel"  id="ph"  placeholder="enter your mobile number">
+                <span id="phmsg"></span><br> -->
+
+                Password<input type="password"  id="password1" placeholder="Password">
+                <span id="ps1msg"></span><br>
+                
+                Confirm Password<input type="password"  id="password2"  placeholder="enter the password again">
+                <span id="ps2msg"></span><br>
+
+                <input type="submit" class="submit" value="Register" style="width: 70px;border: none;background-color: rgb(190, 186, 186);" />
+                
+            </div>
+        </form>
+    </fieldset>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
